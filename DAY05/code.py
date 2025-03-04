@@ -1,11 +1,19 @@
 # Write a Python function that takes a number as input and returns "Even" if the number is even and "Odd" if the number is odd.
 
-def check_even_odd(n):
-    if n % 2 == 0:
-        return "Even"
-    else:
-        return "Odd"
+while True:
+    try:
+        num = input("\n🔢 Enter a number (or type 'exit' to quit): ")
 
-print(check_even_odd(7))   
-print(check_even_odd(10))  
-print(check_even_odd(15))  
+        if num.lower() == 'exit':
+            print("🚀 Exiting... Thanks for using the Even/Odd Checker!")
+            break
+
+        num = int(num)
+
+        if num % 2 == 0:
+            print(f"✅ {num} is an Even number.")
+        else:
+            print(f"🔢 {num} is an Odd number.")
+
+    except ValueError:
+        print("⚠️ Invalid input! Please enter a valid number.")
