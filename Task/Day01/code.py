@@ -1,6 +1,4 @@
-# Ask the user for their name and Display a high-tech welcome message
+# 🚀 Challenge: Write a Python program that prints the following message on the screen:
 
-name = input("Enter your name: ")
-
-print("\n🔹 Processing... Name detected: {} 🔍".format(name))
-print("🔹 Access Granted! Welcome, Agent {}. Your mission awaits! 🚀".format(name))
+print("Hello, World! Welcome to Python Programming. Let's start coding!\n")
+print("• Need help? Feel free to contact the admin.")
